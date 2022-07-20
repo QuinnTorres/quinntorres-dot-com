@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/quinntorres-dot-com/static/css/main.073c9b0a.css",
+    "main.js": "/quinntorres-dot-com/static/js/main.a74aa6f1.js",
+    "static/js/787.db2a93a4.chunk.js": "/quinntorres-dot-com/static/js/787.db2a93a4.chunk.js",
+    "static/media/logo.svg": "/quinntorres-dot-com/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/quinntorres-dot-com/index.html",
+    "main.073c9b0a.css.map": "/quinntorres-dot-com/static/css/main.073c9b0a.css.map",
+    "main.a74aa6f1.js.map": "/quinntorres-dot-com/static/js/main.a74aa6f1.js.map",
+    "787.db2a93a4.chunk.js.map": "/quinntorres-dot-com/static/js/787.db2a93a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.a74aa6f1.js"
+  ]
+}
