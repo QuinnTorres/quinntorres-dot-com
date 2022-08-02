@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/quinntorres-dot-com/static/css/main.929dc62e.css",
-    "main.js": "/quinntorres-dot-com/static/js/main.c6f83a7d.js",
-    "static/js/787.db2a93a4.chunk.js": "/quinntorres-dot-com/static/js/787.db2a93a4.chunk.js",
-    "static/media/github.svg": "/quinntorres-dot-com/static/media/github.6733c4c11e77eb3f595e07faec4c52a3.svg",
-    "index.html": "/quinntorres-dot-com/index.html",
-    "static/media/linkedin.svg": "/quinntorres-dot-com/static/media/linkedin.f8c8906f38a6b0219bc8dcc59155a37b.svg",
-    "main.929dc62e.css.map": "/quinntorres-dot-com/static/css/main.929dc62e.css.map",
-    "main.c6f83a7d.js.map": "/quinntorres-dot-com/static/js/main.c6f83a7d.js.map",
-    "787.db2a93a4.chunk.js.map": "/quinntorres-dot-com/static/js/787.db2a93a4.chunk.js.map"
+    "main.css": "/static/css/main.929dc62e.css",
+    "main.js": "/static/js/main.e25506f8.js",
+    "static/js/787.db2a93a4.chunk.js": "/static/js/787.db2a93a4.chunk.js",
+    "static/media/github.svg": "/static/media/github.6733c4c11e77eb3f595e07faec4c52a3.svg",
+    "index.html": "/index.html",
+    "static/media/linkedin.svg": "/static/media/linkedin.f8c8906f38a6b0219bc8dcc59155a37b.svg",
+    "main.929dc62e.css.map": "/static/css/main.929dc62e.css.map",
+    "main.e25506f8.js.map": "/static/js/main.e25506f8.js.map",
+    "787.db2a93a4.chunk.js.map": "/static/js/787.db2a93a4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.929dc62e.css",
-    "static/js/main.c6f83a7d.js"
+    "static/js/main.e25506f8.js"
   ]
 }
