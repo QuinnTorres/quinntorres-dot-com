@@ -1,7 +1,7 @@
 import React from 'react';
-import githubLogo from './github.svg';
-import linkedinLogo from './linkedin.svg';
-import './App.css';
+import {ReactComponent as GitHubLogo} from './github.svg';
+import {ReactComponent as LinkedInLogo} from './linkedin.svg';
+import './App.scss';
 
 function App() {
     return (
@@ -14,7 +14,7 @@ function App() {
                     rel="noopener noreferrer"
                     aria-label="LinkedIn"
                 >
-                    <img src={linkedinLogo} className="App__LinkedInLogo" alt="LinkedIn" />
+                    <LinkedInLogo className="App__LinkedInLogo" />
                 </a>
 
                 <a
@@ -24,7 +24,7 @@ function App() {
                     rel="noopener noreferrer"
                     aria-label="GitHub"
                 >
-                    <img src={githubLogo} className="App__GitHubLogo" alt="GitHub" />
+                    <GitHubLogo className="App__LinkedInLogo" />
                 </a>
             </header>
         </div>
