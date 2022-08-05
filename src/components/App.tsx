@@ -1,7 +1,7 @@
 import React from 'react';
-import {ReactComponent as GitHubLogo} from './github.svg';
-import {ReactComponent as LinkedInLogo} from './linkedin.svg';
-import './App.scss';
+import {ReactComponent as GitHubLogo} from 'svg/github.svg';
+import {ReactComponent as LinkedInLogo} from 'svg/linkedin.svg';
+import 'components/App.scss';
 
 function App() {
     return (
