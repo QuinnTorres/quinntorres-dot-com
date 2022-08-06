@@ -1,32 +1,11 @@
 import React from 'react';
-import {ReactComponent as GitHubLogo} from 'svg/github.svg';
-import {ReactComponent as LinkedInLogo} from 'svg/linkedin.svg';
 import 'components/App.scss';
+import Nav from './global/Nav/Nav';
 
 function App() {
     return (
         <div className="App">
-            <header className="App__Header">
-                <a
-                    className="App__ProfileLink App__LinkedIn"
-                    href="https://www.linkedin.com/in/quinn-torres/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                >
-                    <LinkedInLogo className="App__LinkedInLogo" />
-                </a>
-
-                <a
-                    className="App__ProfileLink App__GitHub"
-                    href="https://github.com/QuinnTorres/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                >
-                    <GitHubLogo className="App__LinkedInLogo" />
-                </a>
-            </header>
+            <Nav />
         </div>
     );
 }
