@@ -1,9 +1,9 @@
 .Nav {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2rem;
+  background: grey;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  column-gap: 1rem;
 }
