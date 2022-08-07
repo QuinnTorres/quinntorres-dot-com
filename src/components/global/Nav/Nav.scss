@@ -6,15 +6,35 @@
   right: 0;
   left: 0;
   display: flex;
-  flex-wrap: wrap;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
   border-bottom: 0.0625rem solid $color-black;
   background: $color-white;
+
+  @media (min-width: $bp-med) {
+    padding: 1rem 2rem;
+  }
+}
+
+.Nav__MenuButton {
+  width: 2rem;
+  height: 2rem;
+
+  &:hover {
+    background: $color-highlight;
+  }
 }
 
 .Nav__Header {
-  flex: 1 0 100%;
-  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin-left: auto;
+  text-align: right;
+
+  @media (min-width: $bp-med) {
+    flex: 1 0 100%;
+    text-align: left;
+  }
 }
 
 .Nav__HeaderTitle {
@@ -33,16 +53,6 @@
 
 .Nav__HeaderSubTitle {
   display: block;
+  max-width: 11rem;
   font-size: 1rem;
-}
-
-.Nav__Links {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  column-gap: 0.5rem;
-
-  @media (min-width: $bp-med) {
-    margin-left: auto;
-  }
 }

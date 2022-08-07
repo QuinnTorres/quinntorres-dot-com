@@ -1,32 +1,23 @@
 import React from 'react';
 import 'components/global/Nav/Nav.scss';
-import {ReactComponent as GitHubLogo} from 'svg/github.svg';
-import {ReactComponent as LinkedInLogo} from 'svg/linkedin.svg';
-import {ReactComponent as EmailLogo} from 'svg/email.svg';
+import {ReactComponent as MenuIcon} from 'svg/hamburger.svg';
 
-import IconLink from 'components/navigation/IconLink/IconLink';
+import SocialLinks from 'components/navigation/SocialLinks/SocialLinks';
+import NavMenu from 'components/global/NavMenu/NavMenu';
+
+let menuIsOpen = false;
+
+function toggleMenu() {
+  menuIsOpen = !menuIsOpen;
+}
 
 function Nav() {
-  const links = [
-    {
-      name: 'Email',
-      url: 'mailto:quinntorrs@gmail.com',
-      logo: EmailLogo
-    },
-    {
-      name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/quinn-torres/',
-      logo: LinkedInLogo
-    },
-    {
-      name: 'GitHub',
-      url: 'https://github.com/QuinnTorres/',
-      logo: GitHubLogo
-    }
-  ];
-
   return (
     <header className="Nav">
+      <button className="Nav__MenuButton" aria-label="Open mobile menu" onClick={toggleMenu}>
+        <MenuIcon />
+      </button>
+
       <h1 className="Nav__Header">
         <a className="Nav__HeaderTitle" href="/">
           Quinn Torres
@@ -36,16 +27,7 @@ function Nav() {
         </span>
       </h1>
 
-      <div className="Nav__Links">
-        {links.map(link => (
-          <IconLink
-            key={link.url}
-            name={link.name}
-            url={link.url}
-            logo={link.logo}
-          />
-        ))}
-      </div>
+      {menuIsOpen ? <NavMenu /> : <SocialLinks />}
     </header>
   );
 }
