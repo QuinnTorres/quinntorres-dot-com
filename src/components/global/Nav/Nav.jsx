@@ -9,6 +9,11 @@ import IconLink from 'components/navigation/IconLink/IconLink';
 function Nav() {
     const links = [
         {
+            name: 'Email',
+            url: 'mailto:quinntorrs@gmail.com',
+            logo: EmailLogo
+        },
+        {
             name: 'LinkedIn',
             url: 'https://www.linkedin.com/in/quinn-torres/',
             logo: LinkedInLogo
@@ -17,11 +22,6 @@ function Nav() {
             name: 'GitHub',
             url: 'https://github.com/QuinnTorres/',
             logo: GitHubLogo
-        },
-        {
-            name: 'Email',
-            url: 'mailto:quinntorrs@gmail.com',
-            logo: EmailLogo
         }
     ];
 
