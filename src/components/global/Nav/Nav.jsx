@@ -27,14 +27,25 @@ function Nav() {
 
   return (
     <header className="Nav">
-      {links.map(link => (
-        <IconLink
-          key={link.url}
-          name={link.name}
-          url={link.url}
-          logo={link.logo}
-        />
-      ))}
+      <h1 className="Nav__Header">
+        <a className="Nav__HeaderTitle" href="/">
+          Quinn Torres
+        </a>
+        <span className="Nav__HeaderSubTitle">
+          Senior Front-End Developer @ Dotdash Meredith
+        </span>
+      </h1>
+
+      <div className="Nav__Links">
+        {links.map(link => (
+          <IconLink
+            key={link.url}
+            name={link.name}
+            url={link.url}
+            logo={link.logo}
+          />
+        ))}
+      </div>
     </header>
   );
 }

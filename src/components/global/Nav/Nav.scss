@@ -1,9 +1,48 @@
+@import "css/styles";
+
 .Nav {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  height: 2rem;
-  background: grey;
+  left: 0;
   display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  border-bottom: 0.0625rem solid $color-black;
+  background: $color-white;
+}
+
+.Nav__Header {
+  flex: 1 0 100%;
+  text-align: left;
+}
+
+.Nav__HeaderTitle {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: $color-text;
+  font-size: 2rem;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $color-highlight;
+  }
+}
+
+.Nav__HeaderSubTitle {
+  display: block;
+  font-size: 1rem;
+}
+
+.Nav__Links {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  column-gap: 0.5rem;
+
+  @media (min-width: $bp-med) {
+    margin-left: auto;
+  }
 }

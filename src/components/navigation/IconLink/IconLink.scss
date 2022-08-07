@@ -1,9 +1,11 @@
+@import "css/styles";
+
 .IconLink {
   width: 2rem;
   height: 2rem;
-  fill: #000;
+  fill: $color-black;
 
   &:hover {
-    fill: #fff;
+    fill: $color-highlight;
   }
 }
