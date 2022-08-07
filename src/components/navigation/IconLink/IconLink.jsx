@@ -1,16 +1,16 @@
 import React from 'react';
 import 'components/navigation/IconLink/IconLink.scss';
 
-function IconLink(props) {
+function IconLink({url, name, logo}) {
   return (
     <a
       className="IconLink"
-      href={props.url}
+      href={url}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={props.name}
+      aria-label={name}
     >
-      <props.logo className={`App__${props.name}`} />
+      <logo className={`App__${name}`} />
     </a>
   );
 }
