@@ -1,7 +1,7 @@
 import React from 'react';
 import 'components/navigation/IconLink/IconLink.scss';
 
-function IconLink({url, name, logo}) {
+function IconLink({url, name, logo: Logo}) {
   return (
     <a
       className="IconLink"
@@ -10,7 +10,7 @@ function IconLink({url, name, logo}) {
       rel="noopener noreferrer"
       aria-label={name}
     >
-      <logo className={`App__${name}`} />
+      <Logo className={`App__${name}`} />
     </a>
   );
 }

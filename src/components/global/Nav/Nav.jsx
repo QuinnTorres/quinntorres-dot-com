@@ -1,17 +1,17 @@
-import React from 'react';
+import {React, useState} from 'react';
 import 'components/global/Nav/Nav.scss';
 import {ReactComponent as MenuIcon} from 'svg/hamburger.svg';
 
 import SocialLinks from 'components/navigation/SocialLinks/SocialLinks';
 import NavMenu from 'components/global/NavMenu/NavMenu';
 
-let menuIsOpen = false;
-
-function toggleMenu() {
-  menuIsOpen = !menuIsOpen;
-}
-
 function Nav() {
+  let [menuIsOpen, setMenuIsOpen] = useState(false);
+
+  function toggleMenu() {
+    setMenuIsOpen(!menuIsOpen)
+  }
+
   return (
     <header className="Nav">
       <button className="Nav__MenuButton" aria-label="Open mobile menu" onClick={toggleMenu}>

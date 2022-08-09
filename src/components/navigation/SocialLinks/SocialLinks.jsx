@@ -27,12 +27,12 @@ function SocialLinks({className=''}) {
 
   return (
     <div className={`SocialLinks ${className}`}>
-      {links.map(link => (
+      {links.map(({url, name, logo}) => (
         <IconLink
-          key={link.url}
-          name={link.name}
-          url={link.url}
-          logo={link.logo}
+          key={url}
+          name={name}
+          url={url}
+          logo={logo}
         />
       ))}
     </div>
