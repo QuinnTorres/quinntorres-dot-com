@@ -5,18 +5,26 @@ import {ReactComponent as MenuIcon} from 'svg/hamburger.svg';
 import SocialLinks from 'components/navigation/SocialLinks/SocialLinks';
 import NavMenu from 'components/global/NavMenu/NavMenu';
 
+function NavMenuButton({onClick}) {
+  return (
+    <button className="Nav__MenuButton" aria-label="Open mobile menu" onClick={onClick}>
+      <MenuIcon />
+    </button>
+  )
+}
+
 function Nav() {
-  let [menuIsOpen, setMenuIsOpen] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const body = document.querySelector('body');
 
   function toggleMenu() {
-    setMenuIsOpen(!menuIsOpen)
+    setMenuIsOpen(!menuIsOpen);
+    body.classList.toggle('noscroll')
   }
 
   return (
     <header className="Nav">
-      <button className="Nav__MenuButton" aria-label="Open mobile menu" onClick={toggleMenu}>
-        <MenuIcon />
-      </button>
+      <NavMenuButton onClick={toggleMenu} />
 
       <h1 className="Nav__Header">
         <a className="Nav__HeaderTitle" href="/">
@@ -27,7 +35,13 @@ function Nav() {
         </span>
       </h1>
 
-      {menuIsOpen ? <NavMenu /> : <SocialLinks />}
+      {menuIsOpen ?
+        <NavMenu>
+          <NavMenuButton onClick={toggleMenu} />
+        </NavMenu>
+        :
+        <SocialLinks />
+      }
     </header>
   );
 }

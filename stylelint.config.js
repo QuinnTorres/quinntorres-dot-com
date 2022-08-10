@@ -20,7 +20,9 @@ module.exports = {
     'unit-allowed-list': [
       'em',
       'rem',
-      '%'
+      '%',
+      'vw',
+      'vh'
     ]
   }
 }

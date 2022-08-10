@@ -9,10 +9,6 @@
   padding: 1rem 1.5rem;
   border-bottom: 0.0625rem solid $color-black;
   background: $color-white;
-
-  @media (min-width: $bp-med) {
-    padding: 1rem 2rem;
-  }
 }
 
 .Nav__MenuButton {
@@ -21,7 +17,7 @@
   flex-shrink: 0;
 
   &:hover {
-    fill: $color-highlight;
+    fill: $color-link;
   }
 }
 
@@ -31,11 +27,6 @@
   justify-content: flex-end;
   margin-left: auto;
   text-align: right;
-
-  @media (min-width: $bp-med) {
-    flex: 1 0 100%;
-    text-align: left;
-  }
 }
 
 .Nav__HeaderTitle {
@@ -49,7 +40,7 @@
   text-transform: uppercase;
 
   &:hover {
-    color: $color-highlight;
+    color: $color-link;
   }
 }
 
