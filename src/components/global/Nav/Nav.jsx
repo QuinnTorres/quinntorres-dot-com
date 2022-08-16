@@ -31,7 +31,8 @@ function Nav() {
           Quinn Torres
         </a>
         <span className="Nav__HeaderSubTitle">
-          Senior Front-End Developer @ Dotdash Meredith
+          <span className="Nav__HeaderSubTitleLine">Senior Front-End Developer</span>
+          <span className="Nav__HeaderSubTitleLine">@ Dotdash Meredith</span>
         </span>
       </h1>
 
