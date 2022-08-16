@@ -5,9 +5,9 @@ import {ReactComponent as MenuIcon} from 'svg/hamburger.svg';
 import SocialLinks from 'components/navigation/SocialLinks/SocialLinks';
 import NavMenu from 'components/global/NavMenu/NavMenu';
 
-function NavMenuButton({onClick}) {
+function NavMenuButton({onClick, menuIsOpen=false}) {
   return (
-    <button className="Nav__MenuButton" aria-label="Open mobile menu" onClick={onClick}>
+    <button className={`Nav__MenuButton ${menuIsOpen ? 'Nav__MenuButton--Open' : ''}`} aria-label="Open mobile menu" onClick={onClick}>
       <MenuIcon />
     </button>
   )
@@ -38,7 +38,7 @@ function Nav() {
 
       {menuIsOpen ?
         <NavMenu>
-          <NavMenuButton onClick={toggleMenu} />
+          <NavMenuButton onClick={toggleMenu} menuIsOpen={true}/>
         </NavMenu>
         :
         <SocialLinks />

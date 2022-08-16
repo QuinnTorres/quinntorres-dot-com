@@ -3,9 +3,9 @@
 .IconLink {
   width: 2rem;
   height: 2rem;
-  fill: $color-black;
+  fill: $color-link;
 
   &:hover {
-    fill: $color-link;
+    fill: $color-link-highlight;
   }
 }

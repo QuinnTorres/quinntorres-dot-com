@@ -15,6 +15,15 @@
   width: 2rem;
   height: 2rem;
   flex-shrink: 0;
+  fill: $color-link;
+
+  &:hover {
+    fill: $color-link-highlight;
+  }
+}
+
+.Nav__MenuButton--Open {
+  fill: $color-link-highlight;
 
   &:hover {
     fill: $color-link;
