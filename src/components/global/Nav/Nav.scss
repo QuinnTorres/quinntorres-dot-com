@@ -1,13 +1,14 @@
 @import "css/styles";
 
 .Nav {
+  @include nav-border;
+
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   display: flex;
   padding: 1rem 1.5rem;
-  border-bottom: 0.0625rem solid $color-black;
   background: $color-white;
 }
 
