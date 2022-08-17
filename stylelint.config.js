@@ -17,12 +17,8 @@ module.exports = {
         'message': 'Expected class selector to be UpperCamelCase'
       }
     ],
-    'unit-allowed-list': [
-      'em',
-      'rem',
-      '%',
-      'vw',
-      'vh'
+    'unit-disallowed-list': [
+      'px',
     ]
   }
 }

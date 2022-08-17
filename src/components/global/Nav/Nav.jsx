@@ -1,17 +1,8 @@
 import {React, useState} from 'react';
 import 'components/global/Nav/Nav.scss';
-import {ReactComponent as MenuIcon} from 'svg/hamburger.svg';
 
 import SocialLinks from 'components/navigation/SocialLinks/SocialLinks';
 import NavMenu from 'components/global/NavMenu/NavMenu';
-
-function NavMenuButton({onClick, menuIsOpen=false}) {
-  return (
-    <button className={`Nav__MenuButton ${menuIsOpen ? 'Nav__MenuButton--Open' : ''}`} aria-label="Open mobile menu" onClick={onClick}>
-      <MenuIcon />
-    </button>
-  )
-}
 
 function Nav() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -23,8 +14,12 @@ function Nav() {
   }
 
   return (
-    <header className="Nav">
-      <NavMenuButton onClick={toggleMenu} />
+    <header className={`Nav ${menuIsOpen ? 'Nav--MenuOpen' : ''}`}>
+      <button className="Nav__MenuButton" aria-label="Open mobile menu" onClick={toggleMenu}>
+        <div className="Nav__MenuButtonShape Nav__MenuButtonTop" />
+        <div className="Nav__MenuButtonShape Nav__MenuButtonMiddle" />
+        <div className="Nav__MenuButtonShape Nav__MenuButtonBottom" />
+      </button>
 
       <h1 className="Nav__Header">
         <a className="Nav__HeaderTitle" href="/">
@@ -37,9 +32,7 @@ function Nav() {
       </h1>
 
       {menuIsOpen ?
-        <NavMenu>
-          <NavMenuButton onClick={toggleMenu} menuIsOpen={true}/>
-        </NavMenu>
+        <NavMenu />
         :
         <SocialLinks />
       }
