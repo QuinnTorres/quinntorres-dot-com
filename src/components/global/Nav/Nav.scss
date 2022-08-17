@@ -2,17 +2,50 @@
 
 $nav-padding-vertical: 1rem;
 $nav-padding-horizontal: 1.5rem;
+$border-height: 0.25rem;
 
 .Nav {
-  @include nav-border;
-
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   display: flex;
-  padding: $nav-padding-vertical $nav-padding-horizontal;
+  overflow: hidden;
+  height: 6.25rem;
+  align-items: center;
+  padding: 0 $nav-padding-horizontal;
+  padding-bottom: $border-height;
   background: $color-white;
+  transition: height $anim-speed-default ease-in-out;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: $border-height;
+    content: "";
+  }
+
+  &::before {
+    background: linear-gradient(to left, $color-link-highlight, $color-link);
+  }
+
+  &::after {
+    background: linear-gradient(to left, $color-link, $color-link-highlight);
+    opacity: 0;
+    transition: opacity $anim-speed-slow ease-in-out;
+  }
+}
+
+.Nav--MenuOpen {
+  height: 50vh;
+
+  &::after {
+    opacity: 1;
+  }
 }
 
 .Nav__MenuButton {
@@ -54,7 +87,7 @@ $nav-padding-horizontal: 1.5rem;
 .Nav__MenuButtonTop {
   transform: rotate(0);
   transform-origin: top left;
-  transition: transform 0.25s ease-in-out;
+  transition: transform $anim-speed-default ease-in-out;
 
   .Nav--MenuOpen & {
     transform: rotate(45deg);
@@ -63,7 +96,7 @@ $nav-padding-horizontal: 1.5rem;
 
 .Nav__MenuButtonMiddle {
   transform: translateX(0);
-  transition: transform 0.25s ease-in-out;
+  transition: transform $anim-speed-default ease-in-out;
 
   .Nav--MenuOpen & {
     transform: translateX(calc(-100% - #{$nav-padding-horizontal}));
@@ -73,7 +106,7 @@ $nav-padding-horizontal: 1.5rem;
 .Nav__MenuButtonBottom {
   transform: rotate(0);
   transform-origin: bottom left;
-  transition: transform 0.25s ease-in-out;
+  transition: transform $anim-speed-default ease-in-out;
 
   .Nav--MenuOpen & {
     transform: rotate(-45deg);

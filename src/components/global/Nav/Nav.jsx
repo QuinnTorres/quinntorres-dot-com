@@ -21,20 +21,19 @@ function Nav() {
         <div className="Nav__MenuButtonShape Nav__MenuButtonBottom" />
       </button>
 
-      <h1 className="Nav__Header">
-        <a className="Nav__HeaderTitle" href="/">
-          Quinn Torres
-        </a>
-        <span className="Nav__HeaderSubTitle">
-          <span className="Nav__HeaderSubTitleLine">Senior Front-End Developer</span>
-          <span className="Nav__HeaderSubTitleLine">@ Dotdash Meredith</span>
-        </span>
-      </h1>
-
       {menuIsOpen ?
         <NavMenu />
         :
-        <SocialLinks />
+        <h1 className="Nav__Header">
+          <a className="Nav__HeaderTitle" href="/">
+            Quinn Torres
+          </a>
+          <span className="Nav__HeaderSubTitle">
+            <span className="Nav__HeaderSubTitleLine">Senior Front-End Developer</span>
+            <span className="Nav__HeaderSubTitleLine">@ Dotdash Meredith</span>
+          </span>
+          <SocialLinks />
+        </h1>
       }
     </header>
   );
