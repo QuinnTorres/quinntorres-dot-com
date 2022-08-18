@@ -1,7 +1,12 @@
 @import "css/styles";
 
 .App {
+  padding-top: $header-height;
   color: $color-text;
   font-family: $font-1;
   text-align: center;
+}
+
+.Content {
+  padding: 0 2rem;
 }

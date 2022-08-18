@@ -11,7 +11,7 @@ $border-height: 0.25rem;
   left: 0;
   display: flex;
   overflow: hidden;
-  height: 6.25rem;
+  height: $header-height;
   align-items: center;
   padding: 0 $nav-padding-horizontal;
   padding-bottom: $border-height;
