@@ -5,8 +5,8 @@ import SocialLinksMenu from 'components/navigation/SocialLinks/SocialLinksMenu/S
 function NavMenu({children}) {
   const links = [
     {
-      name: 'About',
-      url: '#about',
+      name: 'About Me',
+      url: '#about-me',
     },
     {
       name: 'Experience',
