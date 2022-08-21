@@ -1,3 +1,20 @@
+@import "css/breakpoints";
+@import "css/colors";
+@import "css/fonts";
+
+/* Ignore variable pattern for global variables */
+/* stylelint-disable scss/dollar-variable-pattern */
+
+/*
+FONT
+*/
+
+$font-1: "RobotoCondensed", arial, sans-serif;
+$font-weight-bold: bold;
+$font-size-sm: 1rem;
+$font-size-md: 1.5rem;
+$font-size-lg: 2rem;
+
 /*
 ANIMATION
 */
@@ -6,7 +23,14 @@ $anim-speed-default: 0.25s;
 $anim-speed-slow: 0.5s;
 
 /*
+Z-INDEX
+*/
+$z-body: 1;
+$z-nav: 2;
+
+/*
 LAYOUT
 */
 
 $header-height: 6.25rem;
+$border-gradient: linear-gradient(to left, $color-link-highlight, $color-link);
