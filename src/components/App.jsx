@@ -16,6 +16,7 @@ function App() {
   return (
     <div className="App">
       <Nav menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
+
       <main className="Content" onClick={toggleMenu}>
         <About />
       </main>
