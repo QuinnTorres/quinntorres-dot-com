@@ -28,7 +28,7 @@ function NavMenu({children}) {
 
       <div className="NavMenu__Links">
         {links.map(link => (
-          <a className="NavMenu__Link" href={link.url}>
+          <a className="NavMenu__Link" href={link.url} key={link.url}>
             {link.name}
           </a>        
         ))}
