@@ -77,12 +77,13 @@ main {
 }
 
 body {
+  position: relative;
   line-height: 1;
 }
 
-ol,
-ul {
-  list-style: none;
+li {
+  margin-bottom: 0.25rem;
+  margin-left: 1rem;
 }
 
 code {
@@ -122,4 +123,10 @@ button {
   padding: 0;
   border: none;
   background: none;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 1rem;
 }
