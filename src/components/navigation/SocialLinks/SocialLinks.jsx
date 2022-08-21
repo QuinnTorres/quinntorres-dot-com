@@ -10,17 +10,17 @@ function SocialLinks({className=''}) {
   const links = [
     {
       name: 'Email',
-      url: 'mailto:quinntorrs@gmail.com',
+      url: process.env.REACT_APP_EMAIL,
       logo: EmailIcon
     },
     {
       name: 'LinkedIn',
-      url: 'https://www.linkedin.com/in/quinn-torres/',
+      url: process.env.REACT_APP_LINKEDIN,
       logo: LinkedInIcon
     },
     {
       name: 'GitHub',
-      url: 'https://github.com/QuinnTorres/',
+      url: process.env.REACT_APP_GITHUB,
       logo: GitHubIcon
     }
   ];

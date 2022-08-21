@@ -20,6 +20,11 @@ function About() {
         <p>
         I graduated from Columbia University with a BS in Computer Science and a minor in Economics. I'm passionate about improving documentation, dev tooling, and processes!
         </p>
+        <ul>
+          <li>📫 <TextLink href={process.env.REACT_APP_EMAIL}>Send me an email</TextLink></li>
+          <li>💼 <TextLink href={process.env.REACT_APP_LINKEDIN}>Find me on LinkedIn</TextLink></li>
+          <li>👨🏻‍💻 <TextLink href={process.env.REACT_APP_GITHUB}>View my projects on GitHub</TextLink></li>
+        </ul>
       </SectionHeader>
     </div>
   );
