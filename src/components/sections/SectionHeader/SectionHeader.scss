@@ -1,6 +1,51 @@
-@import "css/styles";
+@import "css/variables";
+
+$_border-width: 0.5rem;
+
+.SectionHeader {
+  line-height: 0;
+}
 
 .SectionHeader__Image {
   width: 100%;
-  border-radius: 0.5rem;
+}
+
+.SectionHeader__Content {
+  position: relative;
+  padding: 0.5rem 2rem;
+  border: $_border-width solid;
+  margin-top: -5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  background: $color-background;
+  border-image: $border-gradient 1;
+  line-height: normal;
+  transform: translateZ(0) // new stacking context to sit on top of image
+}
+
+.SectionHeader__Title {
+  position: absolute;
+  top: 0;
+  right: -$_border-width;
+  width: calc(100% + #{2 * $_border-width});
+  background: $border-gradient;
+  background-clip: text;
+  font-size: $font-size-xl;
+  font-weight: bold;
+  line-height: 1;
+  text-align: right;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  transform: translateY(-100%);
+}
+
+.SectionHeader__TitleLink {
+  color: $color-link-highlight;
+  text-decoration: none;
+}
+
+.SectionHeader__Text {
+  margin-top: 1rem;
+  font-size: $font-size-sm;
+  text-align: left;
 }

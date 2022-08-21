@@ -1,11 +1,12 @@
 @import "css/variables";
 
-$nav-padding-vertical: 1rem;
-$nav-padding-horizontal: 1.5rem;
-$border-height: 0.25rem;
+$_border-height: 0.25rem;
+$_nav-padding-vertical: 1rem;
+$_nav-padding-horizontal: 1.5rem;
 
 .Nav {
   position: fixed;
+  z-index: $z-nav;
   top: 0;
   right: 0;
   left: 0;
@@ -13,9 +14,9 @@ $border-height: 0.25rem;
   overflow: hidden;
   height: $header-height;
   align-items: center;
-  padding: 0 $nav-padding-horizontal;
-  padding-bottom: $border-height;
-  background: $color-white;
+  padding: 0 $_nav-padding-horizontal;
+  padding-bottom: $_border-height;
+  background: $color-background;
   transition: height $anim-speed-default ease-in-out;
 
   &::before,
@@ -25,18 +26,18 @@ $border-height: 0.25rem;
     left: 0;
     display: block;
     width: 100%;
-    height: $border-height;
+    height: $_border-height;
     content: "";
   }
 
   &::before {
-    background: linear-gradient(to left, $color-link-highlight, $color-link);
+    background: $border-gradient;
   }
 
   &::after {
     background: linear-gradient(to left, $color-link, $color-link-highlight);
     opacity: 0;
-    transition: opacity $anim-speed-slow ease-in-out;
+    transition: opacity $anim-speed-crawl ease-in-out;
   }
 }
 
@@ -50,9 +51,9 @@ $border-height: 0.25rem;
 
 .Nav__MenuButton {
   position: absolute;
-  z-index: 1;
-  top: $nav-padding-vertical;
-  left: $nav-padding-horizontal;
+  z-index: $z-body;
+  top: $_nav-padding-vertical;
+  left: $_nav-padding-horizontal;
   display: flex;
   width: 2rem;
   height: 2rem;
@@ -60,18 +61,6 @@ $border-height: 0.25rem;
   flex-wrap: wrap;
   align-content: space-around;
   fill: $color-link;
-
-  &:hover {
-    fill: $color-link-highlight;
-  }
-
-  .Nav--MenuOpen & {
-    fill: $color-link-highlight;
-
-    &:hover {
-      fill: $color-link;
-    }
-  }
 }
 
 .Nav__MenuButtonShape {
@@ -79,7 +68,7 @@ $border-height: 0.25rem;
   height: 0.25rem;
   background: $color-link;
 
-  .Nav--MenuOpen & {
+  .Nav__MenuButton:hover & {
     background: $color-link-highlight;
   }
 }
@@ -99,7 +88,7 @@ $border-height: 0.25rem;
   transition: transform $anim-speed-default ease-in-out;
 
   .Nav--MenuOpen & {
-    transform: translateX(calc(-100% - #{$nav-padding-horizontal}));
+    transform: translateX(calc(-100% - #{$_nav-padding-horizontal}));
   }
 }
 
@@ -123,10 +112,9 @@ $border-height: 0.25rem;
 
 .Nav__HeaderTitle {
   display: block;
-  flex: 1 0 100%;
   margin-bottom: 0.25rem;
   color: $color-text;
-  font-size: 2rem;
+  font-size: $font-size-lg;
   font-weight: $font-weight-bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -138,7 +126,7 @@ $border-height: 0.25rem;
 
 .Nav__HeaderSubTitle {
   display: block;
-  font-size: 1rem;
+  font-size: $font-size-sm;
 }
 
 .Nav__HeaderSubTitleLine {
