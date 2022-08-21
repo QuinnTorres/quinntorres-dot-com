@@ -1,3 +1,6 @@
+/* Ignore variable pattern for global variables */
+/* stylelint-disable scss/dollar-variable-pattern */
+
 $bp-sm: 23em;
 $bp-med: 40em;
 $bp-lg: 64em;

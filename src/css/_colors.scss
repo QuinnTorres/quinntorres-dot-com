@@ -1,15 +1,20 @@
+/* Ignore variable pattern for global variables */
+/* stylelint-disable scss/dollar-variable-pattern */
+
 /*
 HEX
 */
 
 // Grayscale
 $color-white: #fff;
+$color-black-50: #808080;
 $color-black-13: #222;
 $color-black: #000;
 
 // Color
 $color-link: #2a6161;
 $color-link-highlight: #23afaf;
+$color-background: $color-white;
 
 /*
 APP
