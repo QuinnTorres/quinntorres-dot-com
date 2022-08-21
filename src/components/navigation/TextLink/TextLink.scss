@@ -1,0 +1,11 @@
+@import "css/variables";
+
+.TextLink {
+  color: $color-text;
+  text-decoration-color: $color-link;
+
+  &:hover {
+    color: $color-link-highlight;
+    text-decoration: none;
+  }
+}
