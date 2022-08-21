@@ -1,18 +1,10 @@
-import {React, useState} from 'react';
+import React from 'react';
 import 'components/global/Nav/Nav.scss';
 
 import SocialLinks from 'components/navigation/SocialLinks/SocialLinks';
 import NavMenu from 'components/global/NavMenu/NavMenu';
 
-function Nav() {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const body = document.querySelector('body');
-
-  function toggleMenu() {
-    setMenuIsOpen(!menuIsOpen);
-    body.classList.toggle('noscroll')
-  }
-
+function Nav({menuIsOpen, toggleMenu}) {
   return (
     <header className={`Nav ${menuIsOpen ? 'Nav--MenuOpen' : ''}`}>
       <button className="Nav__MenuButton" aria-label="Open mobile menu" onClick={toggleMenu}>
