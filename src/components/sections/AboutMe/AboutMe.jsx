@@ -6,7 +6,7 @@ import TextLink from 'components/navigation/TextLink/TextLink';
 
 function About() {
   return (
-    <div className="About">
+    <div className="AboutMe">
       <SectionHeader img={ProfilePicture} imgAlt="Profile" title="Hello!" anchor="about-me">
         <p>
         I'm a senior front-end developer at <TextLink href="https://www.dotdashmeredith.com/">Dotdash Meredith</TextLink>, the largest digital publisher in the US. I have 3 years experience developing performance-first sites, which are among the <TextLink href="https://webperf.xyz">fastest on the web</TextLink>. I also have experience with:

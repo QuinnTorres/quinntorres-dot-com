@@ -1,8 +1,8 @@
 import {React, useState} from 'react';
 import 'components/App.scss';
 
-import Nav from './global/Nav/Nav';
-import About from './sections/About/About';
+import GlobalNav from 'components/global/GlobalNav/GlobalNav';
+import AboutMe from 'components/sections/AboutMe/AboutMe';
 
 function App() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -15,10 +15,10 @@ function App() {
 
   return (
     <div className="App">
-      <Nav menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
+      <GlobalNav menuIsOpen={menuIsOpen} toggleMenu={toggleMenu} />
 
       <main className="Content" onClick={toggleMenu}>
-        <About />
+        <AboutMe />
       </main>
     </div>
   );
