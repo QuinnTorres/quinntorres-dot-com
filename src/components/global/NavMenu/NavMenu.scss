@@ -1,18 +1,18 @@
-@import "css/styles";
+@import "css/variables";
 
 .NavMenu {
   display: flex;
   width: 100%;
   flex-flow: column wrap;
   padding: 2rem 1.5rem;
-  background: $color-white;
+  background: $color-background;
 }
 
 .NavMenu__Header {
   margin-top: 1rem;
   margin-bottom: 1.5rem;
   color: $color-text;
-  font-size: 2rem;
+  font-size: $font-size-lg;
   font-weight: $font-weight-bold;
   text-transform: uppercase;
 
@@ -26,7 +26,7 @@
   width: max-content;
   margin: 0 auto 1rem;
   color: $color-text;
-  font-size: 1.5rem;
+  font-size: $font-size-md;
   line-height: 1;
   text-decoration-color: $color-link;
   text-decoration-thickness: 0.1875rem;
