@@ -7,16 +7,3 @@
   font-family: $font-1;
   text-align: center;
 }
-
-.Content {
-  .NoScroll &::before {
-    position: absolute;
-    z-index: $z-body;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba($color-black, 0.5);
-    content: "";
-  }
-}

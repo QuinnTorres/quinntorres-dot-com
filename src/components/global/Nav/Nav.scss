@@ -39,96 +39,96 @@ $_nav-padding-horizontal: 1.5rem;
     opacity: 0;
     transition: opacity $anim-speed-crawl ease-in-out;
   }
-}
 
-.Nav--MenuOpen {
-  height: 50vh;
+  &--MenuOpen {
+    height: 50vh;
+  }
 
-  &::after {
+  &--MenuOpen::after {
     opacity: 1;
   }
-}
 
-.Nav__MenuButton {
-  position: absolute;
-  z-index: $z-body;
-  top: $_nav-padding-vertical;
-  left: $_nav-padding-horizontal;
-  display: flex;
-  width: 2rem;
-  height: 2rem;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  align-content: space-around;
-  fill: $color-link;
-}
+  &__MenuButton {
+    position: absolute;
+    z-index: $z-body;
+    top: $_nav-padding-vertical;
+    left: $_nav-padding-horizontal;
+    display: flex;
+    width: 2rem;
+    height: 2rem;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    align-content: space-around;
+    fill: $color-link;
+  }
 
-.Nav__MenuButtonShape {
-  width: 100%;
-  height: 0.25rem;
-  background: $color-link;
+  &__MenuButtonShape {
+    width: 100%;
+    height: 0.25rem;
+    background: $color-link;
+  }
 
-  .Nav__MenuButton:hover & {
+  &__MenuButton:hover &__MenuButtonShape {
     background: $color-link-highlight;
   }
-}
 
-.Nav__MenuButtonTop {
-  transform: rotate(0);
-  transform-origin: top left;
-  transition: transform $anim-speed-default ease-in-out;
+  &__MenuButtonTop {
+    transform: rotate(0);
+    transform-origin: top left;
+    transition: transform $anim-speed-default ease-in-out;
+  }
 
-  .Nav--MenuOpen & {
+  &--MenuOpen &__MenuButtonTop {
     transform: rotate(45deg);
   }
-}
 
-.Nav__MenuButtonMiddle {
-  transform: translateX(0);
-  transition: transform $anim-speed-default ease-in-out;
+  &__MenuButtonMiddle {
+    transform: translateX(0);
+    transition: transform $anim-speed-default ease-in-out;
+  }
 
-  .Nav--MenuOpen & {
+  &--MenuOpen &__MenuButtonMiddle {
     transform: translateX(calc(-100% - #{$_nav-padding-horizontal}));
   }
-}
 
-.Nav__MenuButtonBottom {
-  transform: rotate(0);
-  transform-origin: bottom left;
-  transition: transform $anim-speed-default ease-in-out;
+  &__MenuButtonBottom {
+    transform: rotate(0);
+    transform-origin: bottom left;
+    transition: transform $anim-speed-default ease-in-out;
+  }
 
-  .Nav--MenuOpen & {
+  &--MenuOpen &__MenuButtonBottom {
     transform: rotate(-45deg);
   }
-}
 
-.Nav__Header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  margin-left: auto;
-  text-align: right;
-}
+  &__Header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: auto;
+    text-align: right;
+  }
 
-.Nav__HeaderTitle {
-  display: block;
-  margin-bottom: 0.25rem;
-  color: $color-text;
-  font-size: $font-size-lg;
-  font-weight: $font-weight-bold;
-  text-decoration: none;
-  text-transform: uppercase;
+  &__HeaderTitle {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: $color-text;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 
-  &:hover {
+  &__HeaderTitle:hover {
     color: $color-link;
   }
-}
 
-.Nav__HeaderSubTitle {
-  display: block;
-  font-size: $font-size-sm;
-}
+  &__HeaderSubTitle {
+    display: block;
+    font-size: $font-size-sm;
+  }
 
-.Nav__HeaderSubTitleLine {
-  display: block;
+  &__HeaderSubTitleLine {
+    display: block;
+  }
 }

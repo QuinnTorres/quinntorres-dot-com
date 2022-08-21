@@ -6,33 +6,33 @@
   flex-flow: column wrap;
   padding: 2rem 1.5rem;
   background: $color-background;
-}
 
-.NavMenu__Header {
-  margin-top: 1rem;
-  margin-bottom: 1.5rem;
-  color: $color-text;
-  font-size: $font-size-lg;
-  font-weight: $font-weight-bold;
-  text-transform: uppercase;
+  &__Header {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    color: $color-text;
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+  }
 
-  &:first-child {
+  &__Header:first-child {
     margin-top: 0;
   }
-}
 
-.NavMenu__Link {
-  display: block;
-  width: max-content;
-  margin: 0 auto 1rem;
-  color: $color-text;
-  font-size: $font-size-md;
-  line-height: 1;
-  text-decoration-color: $color-link;
-  text-decoration-thickness: 0.1875rem;
-  text-underline-position: under;
+  &__Link {
+    display: block;
+    width: max-content;
+    margin: 0 auto 1rem;
+    color: $color-text;
+    font-size: $font-size-md;
+    line-height: 1;
+    text-decoration-color: $color-link;
+    text-decoration-thickness: 0.1875rem;
+    text-underline-position: under;
+  }
 
-  &:hover {
+  &__Link:hover {
     color: $color-link-highlight;
     text-decoration: none;
   }
