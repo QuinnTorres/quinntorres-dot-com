@@ -6,13 +6,15 @@ function SectionHeader({children, img, imgAlt, anchor, title}) {
     <div className="SectionHeader">
       <img className="SectionHeader__Image" src={img} alt={imgAlt} />
 
-      <div className="SectionHeader__Content">
-        <h2 id={anchor} className="SectionHeader__Title">
-          {title}
-        </h2>
+      <div className="SectionHeader__ContentWrapper">
+        <div className="SectionHeader__Content">
+          <h2 id={anchor} className="SectionHeader__Title">
+            {title}
+          </h2>
 
-        <div className="SectionHeader__Text">
-          {children}
+          <div className="SectionHeader__Text">
+            {children}
+          </div>
         </div>
       </div>
     </div>

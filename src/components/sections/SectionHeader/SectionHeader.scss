@@ -1,6 +1,7 @@
 @import "css/variables";
 
 $_border-width: 0.5rem;
+$_offset: 6rem;
 
 .SectionHeader {
   line-height: 0;
@@ -9,15 +10,39 @@ $_border-width: 0.5rem;
     width: 100%;
   }
 
+  &__ContentWrapper {
+    position: relative;
+    background: linear-gradient(to bottom, transparent #{$_offset}, $color-link-highlight #{$_offset}, $color-link calc(100% - #{$_offset}), transparent calc(100% - #{$_offset}));
+  }
+
+  &__ContentWrapper::before,
+  &__ContentWrapper::after {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: $_offset;
+    content: "";
+  }
+
+  &__ContentWrapper::before {
+    top: 0;
+    background: linear-gradient(to bottom, transparent, $color-link-highlight);
+  }
+
+  &__ContentWrapper::after {
+    bottom: 0;
+    background: linear-gradient(to bottom, $color-link, transparent);
+  }
+
   &__Content {
     position: relative;
+    z-index: $z-body;
     padding: 0.5rem 2rem;
     border: $_border-width solid;
-    margin-top: -5rem;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin: -$_offset 1rem;
     background: $color-background;
-    border-image: $border-gradient 1;
+    border-image: linear-gradient(to bottom, $color-link-highlight, $color-link) 1;
     line-height: normal;
     transform: translateZ(0) // new stacking context to sit on top of image
   }
@@ -26,22 +51,22 @@ $_border-width: 0.5rem;
     position: absolute;
     top: 0;
     right: -$_border-width;
-    width: calc(100% + #{2 * $_border-width});
-    background: $border-gradient;
-    background-clip: text;
+    color: $color-link-highlight;
     font-size: $font-size-xl;
     font-weight: bold;
     line-height: 1;
     scroll-margin-top: $header-height;
     text-align: right;
-    -webkit-text-fill-color: transparent;
+    text-shadow: 0.125rem -0.0625rem $color-white;
     text-transform: uppercase;
     transform: translateY(-100%);
   }
 
   &__Text {
     margin-top: 1rem;
+    font-family: $font-2;
     font-size: $font-size-sm;
+    line-height: 1.2;
     text-align: left;
   }
 }
