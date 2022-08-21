@@ -2,7 +2,7 @@ import React from 'react';
 import 'components/global/NavMenu/NavMenu.scss';
 import SocialLinksMenu from 'components/navigation/SocialLinks/SocialLinksMenu/SocialLinksMenu';
 
-function NavMenu({children}) {
+function NavMenu({children, toggleMenu}) {
   const links = [
     {
       name: 'About Me',
@@ -26,7 +26,7 @@ function NavMenu({children}) {
         Contents
       </h2>
 
-      <div className="NavMenu__Links">
+      <div className="NavMenu__Links" onClick={toggleMenu}>
         {links.map(link => (
           <a className="NavMenu__Link" href={link.url} key={link.url}>
             {link.name}

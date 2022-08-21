@@ -14,7 +14,7 @@ function Nav({menuIsOpen, toggleMenu}) {
       </button>
 
       {menuIsOpen ?
-        <NavMenu />
+        <NavMenu toggleMenu={toggleMenu} />
         :
         <h1 className="GlobalNav__Header">
           <a className="GlobalNav__HeaderTitle" href="/">

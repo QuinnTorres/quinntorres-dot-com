@@ -7,10 +7,8 @@ function SectionHeader({children, img, imgAlt, anchor, title}) {
       <img className="SectionHeader__Image" src={img} alt={imgAlt} />
 
       <div className="SectionHeader__Content">
-        <h2 className="SectionHeader__Title">
-          <a className="SectionHeader__TitleLink" href={`#${anchor}`}>
-            {title}
-          </a>
+        <h2 id={anchor} className="SectionHeader__Title">
+          {title}
         </h2>
 
         <div className="SectionHeader__Text">

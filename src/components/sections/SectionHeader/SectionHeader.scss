@@ -32,15 +32,11 @@ $_border-width: 0.5rem;
     font-size: $font-size-xl;
     font-weight: bold;
     line-height: 1;
+    scroll-margin-top: $header-height;
     text-align: right;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     transform: translateY(-100%);
-  }
-
-  &__TitleLink {
-    color: $color-link-highlight;
-    text-decoration: none;
   }
 
   &__Text {

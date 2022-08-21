@@ -3,6 +3,7 @@ import 'components/App.scss';
 
 import GlobalNav from 'components/global/GlobalNav/GlobalNav';
 import AboutMe from 'components/sections/AboutMe/AboutMe';
+import MyExperience from 'components/sections/MyExperience/MyExperience';
 
 function App() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -19,6 +20,7 @@ function App() {
 
       <main className="Content" onClick={toggleMenu}>
         <AboutMe />
+        <MyExperience />
       </main>
     </div>
   );
