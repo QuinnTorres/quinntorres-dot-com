@@ -3,6 +3,7 @@
 .TextLink {
   color: $color-text;
   text-decoration-color: $color-link;
+  text-underline-position: under;
 
   &:hover {
     color: $color-link-highlight;

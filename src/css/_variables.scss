@@ -11,7 +11,7 @@ FONT
 
 $font-1: "RobotoCondensed", arial, sans-serif;
 $font-2: "RobotoSlab", georgia, serif;
-$font-weight-bold: bold;
+$font-size-xs: 0.875rem;
 $font-size-sm: 1rem;
 $font-size-md: 1.5rem;
 $font-size-lg: 2rem;
@@ -27,6 +27,7 @@ $anim-speed-crawl: 1s;
 /*
 Z-INDEX
 */
+$z-behind: -1;
 $z-body: 1;
 $z-nav: 2;
 

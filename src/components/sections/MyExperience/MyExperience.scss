@@ -1,5 +1,105 @@
+@use "sass:math";
 @import "css/variables";
 
-.Experience {
+$_image-size: 3.5rem;
 
+.MyExperience {
+  &__Wrapper {
+    position: relative;
+    display: grid;
+    border-bottom: 0.25rem solid $color-link;
+    margin-top: 1.25rem;
+    column-gap: 0.5rem;
+    grid-template: #{math.div($_image-size, 2)} #{math.div($_image-size, 2)} auto / $_image-size auto;
+  }
+
+  &__Wrapper:nth-child(even) {
+    grid-template: #{math.div($_image-size, 2)} #{math.div($_image-size, 2)} auto / auto $_image-size;
+  }
+
+  &__Wrapper:last-child {
+    border: none;
+  }
+
+  &__Wrapper::before {
+    position: absolute;
+    z-index: $z-behind;
+    top: 0;
+    left: 0;
+    display: block;
+    width: $_image-size;
+    height: $_image-size;
+    background: $color-link-highlight;
+    border-radius: 100%;
+    content: "";
+    transform: translate(-0.25rem, 0.25rem);
+  }
+
+  &__Wrapper:nth-child(even)::before {
+    right: 0;
+    left: auto;
+    transform: translate(0.25rem, 0.25rem);
+  }
+
+  &__SvgDate {
+    width: $_image-size;
+    height: $_image-size;
+  }
+
+  &__Image {
+    width: $_image-size;
+    height: $_image-size;
+    border: 0.25rem solid $color-link;
+    margin-bottom: 0.5rem;
+    border-radius: 100%;
+    grid-row: 1 / 4;
+  }
+
+  &__Wrapper:nth-child(even) &__Image {
+    grid-column: 2;
+  }
+
+  &__Summary {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
+  &__Wrapper:nth-child(even) &__Summary {
+    justify-content: end;
+    grid-column: 1;
+  }
+
+  &__Place {
+    color: $color-link;
+    font-family: $font-1;
+    font-size: $font-size-md;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  &__Title {
+    display: block;
+    align-self: start;
+    font-family: $font-1;
+    font-size: $font-size-sm;
+    font-style: italic;
+    grid-column: 2;
+  }
+
+  &__Notes {
+    font-size: $font-size-xs;
+    grid-column: 1 / 3;
+  }
+
+  &__Note {
+    margin-left: 1rem;
+    list-style-type: disc;
+  }
+
+  &__Note::marker {
+    color: $color-link;
+  }
 }
