@@ -36,7 +36,7 @@ function Nav({menuIsOpen, toggleMenu}) {
             Quinn Torres
           </a>
           <span className="GlobalNav__HeaderSubTitle">
-            <span className="GlobalNav__HeaderSubTitleLine">Senior Front-End Developer</span>
+            <span className="GlobalNav__HeaderSubTitleLine">👨🏻‍💻 Senior Front-End Developer</span>
             <span className="GlobalNav__HeaderSubTitleLine">@ Dotdash Meredith</span>
           </span>
           <SocialLinks />
