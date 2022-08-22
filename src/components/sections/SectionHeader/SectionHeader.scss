@@ -55,7 +55,7 @@ $_offset: 6rem;
     font-size: $font-size-xl;
     font-weight: bold;
     line-height: 1;
-    scroll-margin-top: $header-height;
+    scroll-margin-top: $header-height--min;
     text-align: right;
     text-shadow: 0.125rem -0.0625rem $color-white;
     text-transform: uppercase;
