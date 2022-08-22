@@ -47,7 +47,7 @@ $_nav-padding-horizontal: 1.5rem;
     opacity: 1;
   }
 
-  &--Minimized {
+  &--Minimized:not(&--MenuOpen) {
     height: $header-height--min;
   }
 
@@ -132,7 +132,7 @@ $_nav-padding-horizontal: 1.5rem;
     transition: opacity $anim-speed-default ease-in-out;
   }
 
-  &--Minimized &__HeaderSubTitle {
+  &--Minimized:not(&--MenuOpen) &__HeaderSubTitle {
     opacity: 0;
   }
 
