@@ -1,7 +1,7 @@
 .NoScroll { // stylelint-disable-line selector-class-pattern
   overflow: hidden;
 
-  .Content::before {
+  .Content::after {
     position: absolute;
     z-index: $z-body;
     top: 0;
