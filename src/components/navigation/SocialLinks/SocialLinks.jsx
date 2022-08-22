@@ -26,7 +26,7 @@ function SocialLinks({className=''}) {
   ];
 
   return (
-    <div className={`SocialLinks ${className}`}>
+    <div className={`SocialLinks ${className}`.trim()}>
       {links.map(({url, name, logo}) => (
         <IconLink
           key={url}

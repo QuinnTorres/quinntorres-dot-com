@@ -6,7 +6,7 @@ import NavMenu from 'components/global/NavMenu/NavMenu';
 
 function Nav({menuIsOpen, toggleMenu}) {
   return (
-    <header className={`GlobalNav ${menuIsOpen ? 'GlobalNav--MenuOpen' : ''}`}>
+    <header className={`GlobalNav ${menuIsOpen ? 'GlobalNav--MenuOpen' : ''} ${navIsMinimized ? 'GlobalNav--Minimized' : ''}`.trim()}>
       <button className="GlobalNav__MenuButton" aria-label="Open mobile menu" onClick={toggleMenu}>
         <div className="GlobalNav__MenuButtonShape GlobalNav__MenuButtonTop" />
         <div className="GlobalNav__MenuButtonShape GlobalNav__MenuButtonMiddle" />

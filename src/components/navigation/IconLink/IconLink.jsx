@@ -10,7 +10,7 @@ function IconLink({url, name, logo: Logo}) {
       rel="noopener noreferrer"
       aria-label={name}
     >
-      <Logo className={`App__${name}`} />
+      <Logo className={`App__${name}`.trim()} />
     </a>
   );
 }
