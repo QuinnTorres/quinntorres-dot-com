@@ -12,7 +12,7 @@ function About() {
         I'm a senior front-end developer at <TextLink href="https://www.dotdashmeredith.com/">Dotdash Meredith</TextLink>, the largest digital publisher in the US. I have 3 years experience developing performance-first sites, which are among the <TextLink href="https://webperf.xyz">fastest on the web</TextLink>. I also have experience with:
         </p>
         <ul>
-          <li>⚛️ React.js (this site)</li>
+          <li>⚛️ React.js (<TextLink href={`${process.env.REACT_APP_GITHUB}quinntorres-dot-com/`}>this site</TextLink>)</li>
           <li>✅ Vue.js</li>
           <li>🐹 Ember.js</li>
         </ul>
