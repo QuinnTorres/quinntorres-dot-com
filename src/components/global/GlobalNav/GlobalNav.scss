@@ -15,7 +15,8 @@ $_nav-padding-horizontal: 1.5rem;
   height: $header-height;
   align-items: flex-start;
   padding: $_nav-padding-vertical $_nav-padding-horizontal $_border-height;
-  background: $color-background;
+  backdrop-filter: blur(1.25rem);
+  background: rgba($color-background, 0.9);
   transition: height $anim-speed-default ease-in-out;
 
   &::before,
@@ -41,6 +42,7 @@ $_nav-padding-horizontal: 1.5rem;
 
   &--MenuOpen {
     height: 23.75rem;
+    background: $color-white;
   }
 
   &--MenuOpen::after {
