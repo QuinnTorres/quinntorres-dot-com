@@ -4,14 +4,13 @@ import 'components/global/GlobalNav/GlobalNav.scss';
 import SocialLinks from 'components/navigation/SocialLinks/SocialLinks';
 import NavMenu from 'components/global/NavMenu/NavMenu';
 import { throttle } from 'js/utils.js';
-
-const LARGE_HEADER_CUTOFF = 200;
+import { TOP_OF_PAGE_CUTOFF } from 'components/App';
 
 function Nav({menuIsOpen, toggleMenu}) {
   const [navIsMinimized, setNavIsMinimized] = useState(false);
 
   function handleScroll() {
-    if (window.scrollY > LARGE_HEADER_CUTOFF) {
+    if (window.scrollY > TOP_OF_PAGE_CUTOFF) {
       setNavIsMinimized(true);
     } else {
       setNavIsMinimized(false);

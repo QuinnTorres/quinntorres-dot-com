@@ -2,6 +2,7 @@
 @import "css/styles";
 
 .App {
+  position: relative;
   padding-top: $header-height;
   color: $color-text;
   font-family: $font-1;
