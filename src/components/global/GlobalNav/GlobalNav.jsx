@@ -4,7 +4,7 @@ import 'components/global/GlobalNav/GlobalNav.scss';
 import SocialLinks from 'components/navigation/SocialLinks/SocialLinks';
 import NavMenu from 'components/global/NavMenu/NavMenu';
 import { throttle } from 'js/utils.js';
-import { TOP_OF_PAGE_CUTOFF } from 'components/App';
+import { TOP_OF_PAGE_CUTOFF, SCROLL_THROTTLE } from 'components/App';
 
 function Nav({menuIsOpen, toggleMenu}) {
   const [navIsMinimized, setNavIsMinimized] = useState(false);
@@ -17,7 +17,7 @@ function Nav({menuIsOpen, toggleMenu}) {
     }
   }
 
-  window.addEventListener('scroll', throttle(handleScroll, 100));
+  window.addEventListener('scroll', throttle(handleScroll, SCROLL_THROTTLE));
 
   return (
     <header className={`GlobalNav ${menuIsOpen ? 'GlobalNav--MenuOpen' : ''} ${navIsMinimized ? 'GlobalNav--Minimized' : ''}`.trim()}>

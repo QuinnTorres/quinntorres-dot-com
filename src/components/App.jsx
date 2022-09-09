@@ -7,6 +7,7 @@ import MyExperience from 'components/sections/MyExperience/MyExperience';
 import BackToTop from 'components/global/BackToTop/BackToTop';
 
 export const TOP_OF_PAGE_CUTOFF = 200;
+export const SCROLL_THROTTLE = 50;
 
 function App() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
