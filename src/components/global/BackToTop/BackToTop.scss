@@ -17,6 +17,10 @@ $_right-margin: 1rem;
   transform: none;
   transition: transform $anim-speed-default ease-in-out;
 
+  &:hover {
+    background: $color-link;
+  }
+
   &--Hidden {
     transform: translateX(calc(100% + #{$_right-margin}));
   }
