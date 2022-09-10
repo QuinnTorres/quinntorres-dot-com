@@ -19,7 +19,7 @@ function App() {
 
   function toggleMenu() {
     setMenuIsOpen(!menuIsOpen);
-    body.classList.toggle('NoScroll')
+    body.classList.toggle('NoScroll');
   }
 
   return (
