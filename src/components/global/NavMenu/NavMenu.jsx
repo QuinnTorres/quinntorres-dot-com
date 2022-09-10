@@ -5,15 +5,15 @@ import SocialLinksMenu from 'components/navigation/SocialLinks/SocialLinksMenu/S
 function NavMenu({children, toggleMenu}) {
   const links = [
     {
-      name: 'About Me',
+      name: `#${process.env.REACT_APP_ABOUT_TITLE}`,
       url: `#${process.env.REACT_APP_ABOUT_ANCHOR}`,
     },
     {
-      name: 'Experience',
+      name: `#${process.env.REACT_APP_EXPERIENCE_TITLE}`,
       url: `#${process.env.REACT_APP_EXPERIENCE_ANCHOR}`,
     },
     {
-      name: 'Projects',
+      name: `#${process.env.REACT_APP_PROJECTS_TITLE}`,
       url: `#${process.env.REACT_APP_PROJECTS_ANCHOR}`
     }
   ];
