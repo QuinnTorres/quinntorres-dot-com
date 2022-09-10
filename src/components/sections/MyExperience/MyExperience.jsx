@@ -69,7 +69,7 @@ function MyExperience() {
         'Published research in the Journal of Magnetic Resonance'
       ]
     },
-  ]
+  ];
 
   return (
     <div className="MyExperience">

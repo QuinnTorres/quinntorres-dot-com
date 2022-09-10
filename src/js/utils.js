@@ -10,5 +10,5 @@ export function throttle(callbackFn, limit) {
         wait = false;
       }, limit);
     }
-  }
+  };
 }

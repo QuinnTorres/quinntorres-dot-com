@@ -5,12 +5,16 @@ module.exports = {
   ],
   'rules': {
     'indent': [
-      'warn',
+      'error',
       2
     ],
     'jsx-quotes': [
-      'warn',
+      'error',
       'prefer-double'
+    ],
+    'semi': [
+      'error',
+      'always'
     ]
   }
-}
+};
