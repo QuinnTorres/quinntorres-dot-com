@@ -73,7 +73,7 @@ function MyExperience() {
 
   return (
     <div className="MyExperience">
-      <SectionHeader img={MyExperienceImage} imgAlt="Circuit board" title="Experience" anchor="experience">
+      <SectionHeader img={MyExperienceImage} imgAlt="Circuit board" title="Experience" anchor={process.env.REACT_APP_EXPERIENCE_ANCHOR}>
         {experiences.map(({image, place, title, notes}) => (
           <div className="MyExperience__Wrapper" key={place}>
             <img className="MyExperience__Image" src={image} alt={`${place} logo`} />

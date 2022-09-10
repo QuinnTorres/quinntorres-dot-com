@@ -6,15 +6,15 @@ function NavMenu({children, toggleMenu}) {
   const links = [
     {
       name: 'About Me',
-      url: '#about-me',
+      url: `#${process.env.REACT_APP_ABOUT_ANCHOR}`,
     },
     {
       name: 'Experience',
-      url: '#experience',
+      url: `#${process.env.REACT_APP_EXPERIENCE_ANCHOR}`,
     },
     {
       name: 'Projects',
-      url: '#projects'
+      url: `#${process.env.REACT_APP_PROJECTS_ANCHOR}`
     }
   ];
 
