@@ -21,7 +21,7 @@ function MyExperience() {
         'Given the inaugural product development principles award',
         'Shortened onboarding from 2 months to 2 weeks through documentation',
         'Built a custom AMP framework',
-        'Completely replatformed 2 acquisitions'
+        'Completely replatformed 2 acquisition sites'
       ]
     },
     {
