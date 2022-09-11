@@ -113,20 +113,36 @@ $_nav-padding-horizontal: 1.5rem;
     justify-content: flex-end;
     margin-left: auto;
     text-align: right;
+
+    @media (min-width: $bp-md) {
+      width: 100%;
+      flex-flow: row wrap;
+    }
   }
 
   &__HeaderTitle {
     display: block;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
     color: $color-text;
     font-size: $font-size-lg;
     font-weight: bold;
+    grid-column: 1 / -1;
     text-decoration: none;
     text-transform: uppercase;
   }
 
   &__HeaderTitle:hover {
     color: $color-link;
+  }
+
+  &__RowSeparator {
+    display: none;
+    height: 0;
+    flex: 1 0 100%;
+
+    @media (min-width: $bp-md) {
+      display: block;
+    }
   }
 
   &__HeaderSubTitle {

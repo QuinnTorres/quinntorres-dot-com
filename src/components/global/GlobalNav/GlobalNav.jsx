@@ -41,11 +41,15 @@ function Nav() {
           <a className="GlobalNav__HeaderTitle" href="/">
             Quinn Torres
           </a>
+
+          <div className="GlobalNav__RowSeparator" />
+
+          <SocialLinks />
+
           <span className="GlobalNav__HeaderSubTitle">
             <span className="GlobalNav__HeaderSubTitleLine">👨🏻‍💻 Senior Front-End Developer</span>
             <span className="GlobalNav__HeaderSubTitleLine">@ Dotdash Meredith</span>
           </span>
-          <SocialLinks />
         </h1>
       }
     </header>

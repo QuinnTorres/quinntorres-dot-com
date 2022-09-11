@@ -5,4 +5,9 @@
   align-items: center;
   margin: 0 auto;
   column-gap: 0.5rem;
+
+  @media (min-width: $bp-md) {
+    display: flex;
+    margin-left: 0;
+  }
 }
