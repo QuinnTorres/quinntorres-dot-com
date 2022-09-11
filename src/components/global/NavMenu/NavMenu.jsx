@@ -15,6 +15,10 @@ function NavMenu({children, toggleMenu}) {
     {
       name: process.env.REACT_APP_PROJECTS_TITLE,
       url: `#${process.env.REACT_APP_PROJECTS_ANCHOR}`
+    },
+    {
+      name: process.env.REACT_APP_SKILLS_TITLE,
+      url: `#${process.env.REACT_APP_SKILLS_ANCHOR}`
     }
   ];
 

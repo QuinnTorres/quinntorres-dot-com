@@ -5,12 +5,19 @@ module.exports = {
   ],
   'rules': {
     'indent': [
-      'error',
-      2
+      'off'
     ],
     'jsx-quotes': [
       'error',
       'prefer-double'
+    ],
+    'react/jsx-indent': [
+      'error',
+      2
+    ],
+    'react/jsx-indent-props': [
+      'error',
+      4
     ],
     'semi': [
       'error',

@@ -29,10 +29,10 @@ function SocialLinks({className=''}) {
     <div className={`SocialLinks ${className}`.trim()}>
       {links.map(({url, name, logo}) => (
         <IconLink
-          key={url}
-          name={name}
-          url={url}
-          logo={logo}
+            key={url}
+            name={name}
+            url={url}
+            logo={logo}
         />
       ))}
     </div>

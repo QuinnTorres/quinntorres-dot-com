@@ -4,11 +4,11 @@ import 'components/navigation/IconLink/IconLink.scss';
 function IconLink({url, name, logo: Logo}) {
   return (
     <a
-      className="IconLink"
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={name}
+        className="IconLink"
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={name}
     >
       <Logo className={`App__${name}`.trim()} />
     </a>

@@ -69,7 +69,11 @@ function ProjectList() {
 
   return (
     <div className="ProjectList">
-      <SectionHeader img={ProjectListImage} imgAlt="A computer with code on the screen" title={process.env.REACT_APP_PROJECTS_TITLE} anchor={process.env.REACT_APP_PROJECTS_ANCHOR}>
+      <SectionHeader
+          img={ProjectListImage}
+          imgAlt="A computer with code on the screen"
+          title={process.env.REACT_APP_PROJECTS_TITLE}
+          anchor={process.env.REACT_APP_PROJECTS_ANCHOR}>
         {projects.map(({image, alt, title, link, notes}) => (
           <div className="ProjectList__Wrapper" key={title}>
             <img className="ProjectList__Image" src={image} alt={alt} />
