@@ -6,6 +6,16 @@
   flex-flow: column wrap;
   padding: 2rem 1.5rem;
 
+  @media (min-width: $bp-lg) {
+    display: grid;
+    width: auto;
+    align-items: start;
+    margin: 0 auto;
+    column-gap: 2rem;
+    grid: repeat(2, auto) / repeat(2, minmax(auto, 10rem));
+    grid-auto-flow: column;
+  }
+
   &__Header {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
@@ -13,6 +23,10 @@
     font-size: $font-size-lg;
     font-weight: bold;
     text-transform: uppercase;
+
+    @media (min-width: $bp-lg) {
+      margin-top: 0;
+    }
   }
 
   &__Header:first-child {

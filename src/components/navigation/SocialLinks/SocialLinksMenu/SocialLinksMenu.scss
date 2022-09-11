@@ -6,5 +6,9 @@
 
   .IconLink {
     margin: 0 1rem;
+
+    @media (min-width: $bp-lg) {
+      margin: 0 0.5rem;
+    }
   }
 }
