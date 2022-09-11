@@ -21,26 +21,6 @@ $_image-size: 3.5rem;
     border: none;
   }
 
-  &__Wrapper::before {
-    position: absolute;
-    z-index: $z-behind;
-    top: 0;
-    left: 0;
-    display: block;
-    width: $_image-size;
-    height: $_image-size;
-    background: $color-link-highlight;
-    border-radius: 100%;
-    content: "";
-    transform: translate(-0.25rem, 0.25rem);
-  }
-
-  &__Wrapper:nth-child(even)::before {
-    right: 0;
-    left: auto;
-    transform: translate(0.25rem, 0.25rem);
-  }
-
   &__SvgDate {
     width: $_image-size;
     height: $_image-size;
@@ -52,7 +32,12 @@ $_image-size: 3.5rem;
     border: 0.25rem solid $color-link;
     margin-bottom: 1rem;
     border-radius: 100%;
+    box-shadow: -0.1875rem 0.1875rem 0 0 $color-link-highlight;
     grid-row: 1 / 4;
+  }
+
+  &__Wrapper:nth-child(even) &__Image {
+    box-shadow: 0.1875rem 0.1875rem 0 0 $color-link-highlight;
   }
 
   &__Wrapper:nth-child(even) &__Image {
@@ -90,7 +75,7 @@ $_image-size: 3.5rem;
   }
 
   &__Notes {
-    font-size: $font-size-xs;
+    font-size: $font-size-sm;
     grid-column: 1 / 3;
   }
 

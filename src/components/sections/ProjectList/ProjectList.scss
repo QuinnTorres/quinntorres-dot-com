@@ -1,5 +1,41 @@
 @import "css/variables";
 
 .ProjectList {
-  display: block;
+  &__Image {
+    width: 100%;
+    border: 0.5rem solid $color-link;
+    margin-bottom: 0.5rem;
+    box-shadow: -0.375rem 0.375rem 0 0 $color-link-highlight;
+  }
+
+  &__Wrapper:nth-child(even) &__Image {
+    box-shadow: 0.375rem 0.375rem 0 0 $color-link-highlight;
+  }
+
+  &__Summary {
+    margin-bottom: 1rem;
+
+    .TextLink {
+      color: $color-link;
+      font-size: $font-size-md;
+
+      &:hover {
+        color: $color-link-highlight;
+      }
+    }
+  }
+
+  &__Notes {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  &__Note {
+    margin-left: 1rem;
+    list-style: disc;
+  }
+
+  &__Note::marker {
+    color: $color-link;
+  }
 }

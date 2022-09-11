@@ -18,7 +18,7 @@ function ProjectList() {
       title: 'quinntorres.com',
       link: `${process.env.REACT_APP_GITHUB}/quinntorres-dot-com`,
       notes: [
-        'Built with React',
+        'Built with React.js',
         'This website!',
       ]
     },
