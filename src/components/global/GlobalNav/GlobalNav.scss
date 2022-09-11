@@ -109,7 +109,7 @@ $_nav-padding-horizontal: 1.5rem;
 
   &__Header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: flex-end;
     margin-left: auto;
     text-align: right;
