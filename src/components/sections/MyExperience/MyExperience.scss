@@ -2,6 +2,7 @@
 @import "css/variables";
 
 $_image-size: 3.5rem;
+$_image-size--md: 4.5rem;
 
 .MyExperience {
   &__Wrapper {
@@ -11,10 +12,18 @@ $_image-size: 3.5rem;
     margin-top: 1.25rem;
     column-gap: 0.5rem;
     grid-template: #{math.div($_image-size, 2)} #{math.div($_image-size, 2)} auto / $_image-size auto;
+
+    @media (min-width: $bp-md) {
+      grid-template: #{math.div($_image-size--md, 2)} #{math.div($_image-size--md, 2)} auto / $_image-size--md auto;
+    }
   }
 
   &__Wrapper:nth-child(even) {
     grid-template: #{math.div($_image-size, 2)} #{math.div($_image-size, 2)} auto / auto $_image-size;
+
+    @media (min-width: $bp-md) {
+      grid-template: #{math.div($_image-size--md, 2)} #{math.div($_image-size--md, 2)} auto / auto $_image-size--md;
+    }
   }
 
   &__Wrapper:last-child {
@@ -24,6 +33,11 @@ $_image-size: 3.5rem;
   &__SvgDate {
     width: $_image-size;
     height: $_image-size;
+
+    @media (min-width: $bp-md) {
+      width: $_image-size--md;
+      height: $_image-size--md;
+    }
   }
 
   &__Image {
@@ -34,6 +48,11 @@ $_image-size: 3.5rem;
     border-radius: 100%;
     box-shadow: -0.1875rem 0.1875rem 0 0 $color-link-highlight;
     grid-row: 1 / 4;
+
+    @media (min-width: $bp-md) {
+      width: $_image-size--md;
+      height: $_image-size--md;
+    }
   }
 
   &__Wrapper:nth-child(even) &__Image {
@@ -64,6 +83,10 @@ $_image-size: 3.5rem;
     font-size: $font-size-md;
     font-weight: bold;
     line-height: 1;
+
+    @media (min-width: $bp-md) {
+      font-size: $font-size-lg;
+    }
   }
 
   &__Wrapper:nth-child(even) &__Place {

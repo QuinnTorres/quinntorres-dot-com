@@ -7,6 +7,12 @@ $_border-width: 0.5rem;
 
   &__Image {
     width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+    @media (min-width: $bp-md) {
+      aspect-ratio: 5 / 3;
+    }
   }
 
   &__ContentWrapper {
@@ -30,12 +36,12 @@ $_border-width: 0.5rem;
   }
 
   &__ContentWrapper::before {
-    top: 0;
+    top: 0.0625rem;
     background: linear-gradient(to bottom, transparent, $color-link-highlight);
   }
 
   &__ContentWrapper::after {
-    bottom: 0;
+    bottom: 0.0625rem;
     background: linear-gradient(to bottom, $color-link, transparent);
   }
 
@@ -64,12 +70,16 @@ $_border-width: 0.5rem;
     color: $color-link-highlight;
     font-size: $font-size-xl;
     font-weight: bold;
-    line-height: 1;
+    line-height: 0.95;
     scroll-margin-top: #{$header-height--min + 1rem};
     text-align: right;
     text-shadow: 0.125rem -0.0625rem $color-white;
     text-transform: uppercase;
     transform: translateY(-100%);
+
+    @media (min-width: $bp-md) {
+      font-size: $font-size-xxl;
+    }
   }
 
   &__Text {
