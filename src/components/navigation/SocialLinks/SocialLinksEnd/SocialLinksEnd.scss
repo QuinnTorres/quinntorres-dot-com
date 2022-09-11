@@ -1,0 +1,13 @@
+@import "css/variables";
+
+.SocialLinksEnd {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  column-gap: 2rem;
+
+  .IconLink {
+    margin: 1rem 0;
+    fill: $color-white;
+  }
+}

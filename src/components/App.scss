@@ -8,7 +8,29 @@
   font-family: $font-1;
   text-align: center;
 
-  .Content {
+  &__Content {
     display: grid;
+  }
+
+  &__End {
+    width: 100%;
+    padding-top: $section-offset;
+    padding-bottom: 4rem;
+    background: $color-link;
+  }
+
+  &__EndText,
+  &__SignatureText {
+    display: block;
+    align-self: start;
+    color: $color-white;
+    font-family: $font-1;
+    font-size: $font-size-lg;
+    font-weight: bold;
+  }
+
+  &__EndText {
+    margin-top: 3rem;
+    margin-bottom: 6rem;
   }
 }

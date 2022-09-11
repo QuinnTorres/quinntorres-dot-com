@@ -1,7 +1,6 @@
 @import "css/variables";
 
 $_border-width: 0.5rem;
-$_offset: 6rem;
 
 .SectionHeader {
   line-height: 0;
@@ -12,7 +11,7 @@ $_offset: 6rem;
 
   &__ContentWrapper {
     position: relative;
-    background: linear-gradient(to bottom, transparent #{$_offset}, $color-link-highlight #{$_offset}, $color-link calc(100% - #{$_offset}), transparent calc(100% - #{$_offset}));
+    background: linear-gradient(to bottom, transparent #{$section-offset}, $color-link-highlight #{$section-offset}, $color-link calc(100% - #{$section-offset}), transparent calc(100% - #{$section-offset}));
   }
 
   &__ContentWrapper::before,
@@ -21,7 +20,7 @@ $_offset: 6rem;
     left: 0;
     display: block;
     width: 100%;
-    height: $_offset;
+    height: $section-offset;
     content: "";
   }
 
@@ -40,7 +39,7 @@ $_offset: 6rem;
     z-index: $z-body;
     padding: 0.5rem 1.5rem;
     border: $_border-width solid;
-    margin: -$_offset 1rem;
+    margin: -$section-offset 1rem;
     background: $color-background;
     border-image: linear-gradient(to bottom, $color-link-highlight, $color-link) 1;
     line-height: normal;

@@ -5,13 +5,16 @@ import MySkillsImage from 'img/MySkills.jpg';
 import SectionHeader from 'components/sections/SectionHeader/SectionHeader';
 
 function MySkills() {
-  const skills = [
+  const frameworks = [
     'Vue.js',
     'React.js',
     'Ember.js',
     'Spring Boot',
     'Gradle',
-    'Maven',
+    'Maven'
+  ];
+
+  const languages = [
     'JavaScript',
     'CSS',
     'Sass',
@@ -28,13 +31,29 @@ function MySkills() {
           imgAlt="A hand holding a lightbulb to the sun" 
           title={process.env.REACT_APP_SKILLS_TITLE} 
           anchor={process.env.REACT_APP_SKILLS_ANCHOR}>
+        <h3 className="MySkills__SkillHeader MySkills__FrameworkHeader">
+          Frameworks
+        </h3>
+
         <ul className="MySkills__SkillList">
-          {skills.map((skill) => (
-            <li className="MySkills__Skill">
-              {skill}
+          {frameworks.map((framework) => (
+            <li className="MySkills__Skill MySkills__Framework">
+              {framework}
             </li>
           ))}
-        </ul>  
+        </ul>
+
+        <h3 className="MySkills__SkillHeader MySkills__LanguageHeader">
+          Languages
+        </h3>
+
+        <ul className="MySkills__SkillList">
+          {languages.map((language) => (
+            <li className="MySkills__Skill MySkills__Language">
+              {language}
+            </li>
+          ))}
+        </ul>
       </SectionHeader>
     </div>
   );
