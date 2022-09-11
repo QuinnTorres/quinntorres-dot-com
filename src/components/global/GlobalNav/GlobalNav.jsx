@@ -6,8 +6,15 @@ import NavMenu from 'components/global/NavMenu/NavMenu';
 import { throttle } from 'js/utils.js';
 import { TOP_OF_PAGE_CUTOFF, SCROLL_THROTTLE } from 'components/App';
 
-function Nav({menuIsOpen, toggleMenu}) {
+function Nav() {
   const [navIsMinimized, setNavIsMinimized] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const body = document.querySelector('body');
+
+  function toggleMenu() {
+    setMenuIsOpen(!menuIsOpen);
+    body.classList.toggle('NoScroll');
+  }
 
   function handleScroll() {
     if (window.scrollY > TOP_OF_PAGE_CUTOFF) {
