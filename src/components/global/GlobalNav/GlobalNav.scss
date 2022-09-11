@@ -151,7 +151,8 @@ $_nav-padding-horizontal: 1.5rem;
     transition: opacity $anim-speed-default ease-in-out;
   }
 
-  &--Minimized:not(&--MenuOpen) &__HeaderSubTitle {
+  &--Minimized:not(&--MenuOpen) &__HeaderSubTitle,
+  &--Minimized:not(&--MenuOpen) .SocialLinks, {
     opacity: 0;
   }
 

@@ -5,6 +5,7 @@
   align-items: center;
   margin: 0 auto;
   column-gap: 0.5rem;
+  transition: opacity $anim-speed-default ease-in-out;
 
   @media (min-width: $bp-md) {
     display: flex;
