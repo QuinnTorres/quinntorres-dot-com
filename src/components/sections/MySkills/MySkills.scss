@@ -1,0 +1,17 @@
+@import "css/variables";
+
+.MySkills {
+  &__SkillList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  &__Skill {
+    display: block;
+    width: fit-content;
+    padding: 0.5rem;
+    background: $color-link;
+    color: $color-white;
+  }
+}
