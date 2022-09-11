@@ -11,7 +11,12 @@ $_border-width: 0.5rem;
 
   &__ContentWrapper {
     position: relative;
+    padding: 0 1rem;
     background: linear-gradient(to bottom, transparent #{$section-offset}, $color-link-highlight #{$section-offset}, $color-link calc(100% - #{$section-offset}), transparent calc(100% - #{$section-offset}));
+
+    @media (min-width: $bp-md) {
+      padding: 0 3rem;
+    }
   }
 
   &__ContentWrapper::before,
@@ -37,13 +42,19 @@ $_border-width: 0.5rem;
   &__Content {
     position: relative;
     z-index: $z-body;
+    max-width: 34rem;
     padding: 0.5rem 1.5rem;
     border: $_border-width solid;
-    margin: -$section-offset 1rem;
+    margin: -$section-offset auto;
     background: $color-background;
     border-image: linear-gradient(to bottom, $color-link-highlight, $color-link) 1;
     line-height: normal;
-    transform: translateZ(0) // new stacking context to sit on top of image
+    transform: translateZ(0); // new stacking context to sit on top of image
+
+    @media (min-width: $bp-md) {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
   }
 
   &__Title {

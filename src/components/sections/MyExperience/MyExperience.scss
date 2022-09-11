@@ -58,11 +58,16 @@ $_image-size: 3.5rem;
   }
 
   &__Place {
+    flex: 1 0 100%;
     color: $color-link;
     font-family: $font-1;
     font-size: $font-size-md;
     font-weight: bold;
     line-height: 1;
+  }
+
+  &__Wrapper:nth-child(even) &__Place {
+    text-align: right;
   }
 
   &__Title {
