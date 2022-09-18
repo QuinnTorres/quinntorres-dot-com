@@ -14,32 +14,12 @@ $_nav-padding-horizontal: 1.5rem;
   width: 100%;
   height: $header-height;
   align-items: flex-start;
-  padding: $_nav-padding-vertical $_nav-padding-horizontal $_border-height;
+  padding: $_nav-padding-vertical $_nav-padding-horizontal;
+  border-bottom: $_border-height solid $color-link;
   backdrop-filter: blur(1.25rem);
   background: rgba($color-background, 0.9);
   transition: all $anim-speed-default ease-in-out;
   transition-property: height, width, background;
-
-  &::before,
-  &::after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: $_border-height;
-    content: "";
-  }
-
-  &::before {
-    background: $border-gradient;
-  }
-
-  &::after {
-    background: linear-gradient(to left, $color-link, $color-link-highlight);
-    opacity: 0;
-    transition: opacity $anim-speed-crawl ease-in-out;
-  }
 
   &--MenuOpen {
     height: 25.5rem;

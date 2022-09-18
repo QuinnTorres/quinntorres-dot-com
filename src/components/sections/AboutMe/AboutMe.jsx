@@ -3,14 +3,19 @@ import AboutMeImage from 'img/AboutMe.jpg';
 
 import SectionHeader from 'components/sections/SectionHeader/SectionHeader';
 import TextLink from 'components/navigation/TextLink/TextLink';
+import TextRepeater from 'components/text/TextRepeater/TextRepeater';
+
+const TITLE = 'Hello!';
 
 function About() {
   return (
-    <div className="AboutMe">
+    <div className="App__Section AboutMe">
+      <TextRepeater text={TITLE} count={20} />
+
       <SectionHeader
           img={AboutMeImage}
           imgAlt="Profile"
-          title="Hello!"
+          title={TITLE}
           anchor={process.env.REACT_APP_ABOUT_ANCHOR}>
         <p>
           I'm a senior front-end developer in NYC at <TextLink href="https://www.dotdashmeredith.com/">Dotdash Meredith</TextLink>, the largest digital publisher in the US. I have 3 years experience developing performance-first sites, which are among the <TextLink href="https://webperf.xyz">fastest on the web</TextLink>. I also have experience with:

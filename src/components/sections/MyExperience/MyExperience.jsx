@@ -9,6 +9,7 @@ import ADIImage from 'img/ADI.jpg';
 import UTSWImage from 'img/UTSW.jpg';
 
 import SectionHeader from 'components/sections/SectionHeader/SectionHeader';
+import TextRepeater from 'components/text/TextRepeater/TextRepeater';
 
 function MyExperience() {
   const experiences = [
@@ -72,7 +73,9 @@ function MyExperience() {
   ];
 
   return (
-    <div className="MyExperience">
+    <div className="App__Section MyExperience">
+      <TextRepeater text={process.env.REACT_APP_EXPERIENCE_TITLE} count={20} />
+
       <SectionHeader
           img={MyExperienceImage}
           imgAlt="Circuit board" 

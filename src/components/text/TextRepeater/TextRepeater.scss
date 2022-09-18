@@ -1,0 +1,15 @@
+@import "css/variables";
+
+.TextRepeater {
+  position: absolute;
+  top: 0.25rem;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  max-width: 100%;
+  color: $color-link-highlight;
+  font-size: $font-size-md;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+}

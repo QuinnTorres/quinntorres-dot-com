@@ -27,10 +27,6 @@ function App() {
         <MySkills />
 
         <div className="App__End">
-          <span className="App__EndText">
-            🥳 The End!
-          </span>
-
           <span className="App__SignatureText">
             - Quinn Torres
           </span>

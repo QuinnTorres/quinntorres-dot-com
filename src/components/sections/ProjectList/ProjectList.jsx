@@ -9,6 +9,7 @@ import MusicImage from 'img/Project-Music.jpg';
 
 import SectionHeader from 'components/sections/SectionHeader/SectionHeader';
 import TextLink from 'components/navigation/TextLink/TextLink';
+import TextRepeater from 'components/text/TextRepeater/TextRepeater';
 
 function ProjectList() {
   const projects = [
@@ -68,7 +69,9 @@ function ProjectList() {
   ];
 
   return (
-    <div className="ProjectList">
+    <div className="App__Section ProjectList">
+      <TextRepeater text={process.env.REACT_APP_PROJECTS_TITLE} count={20} />
+
       <SectionHeader
           img={ProjectListImage}
           imgAlt="A computer with code on the screen"

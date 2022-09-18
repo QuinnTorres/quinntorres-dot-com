@@ -10,27 +10,43 @@
 
   &__Content {
     display: grid;
+    padding: 1rem 1rem 0;
+    background: $color-link;
+    row-gap: 4rem;
+
+    @media (min-width: $bp-md) {
+      padding: 2rem 2rem 0;
+    }
+
+    @media (min-width: $bp-lg) {
+      padding: 4rem 4rem 0;
+    }
+  }
+
+  &__Section {
+    position: relative;
+    max-width: 60rem;
+    padding: 1.5rem 0 0;
+    margin: 0 auto;
+
+    @media (min-width: $bp-lg) {
+      overflow-x: hidden;
+    }
   }
 
   &__End {
     width: 100%;
-    padding-top: $section-offset;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     background: $color-link;
   }
 
-  &__EndText,
   &__SignatureText {
     display: block;
     align-self: start;
+    margin-top: 3rem;
     color: $color-white;
     font-family: $font-1;
     font-size: $font-size-lg;
     font-weight: bold;
-  }
-
-  &__EndText {
-    margin-top: 3rem;
-    margin-bottom: 6rem;
   }
 }

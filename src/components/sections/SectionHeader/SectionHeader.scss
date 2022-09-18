@@ -1,8 +1,11 @@
 @import "css/variables";
 
 $_border-width: 0.5rem;
+$_border-image: linear-gradient(to bottom, $color-link-highlight, $color-link) 1;
 
 .SectionHeader {
+  border: $_border-width solid;
+  border-image: $_border-image;
   line-height: 0;
 
   &__Image {
@@ -13,6 +16,14 @@ $_border-width: 0.5rem;
     @media (min-width: $bp-md) {
       aspect-ratio: 5 / 3;
     }
+
+    @media (min-width: $bp-lg) {
+      aspect-ratio: 2 / 1;
+    }
+
+    .AboutMe & {
+      object-position: 50% 42%;
+    }
   }
 
   &__ContentWrapper {
@@ -22,6 +33,10 @@ $_border-width: 0.5rem;
 
     @media (min-width: $bp-md) {
       padding: 0 3rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      background: linear-gradient(to bottom, transparent #{$section-offset}, $color-link-highlight #{$section-offset}, $color-link 100%);
     }
   }
 
@@ -43,17 +58,21 @@ $_border-width: 0.5rem;
   &__ContentWrapper::after {
     bottom: 0.0625rem;
     background: linear-gradient(to bottom, $color-link, transparent);
+
+    @media (min-width: $bp-lg) {
+      content: none;
+    }
   }
 
   &__Content {
     position: relative;
     z-index: $z-body;
-    max-width: 34rem;
+    max-width: 37.5rem;
     padding: 0.5rem 1.5rem;
     border: $_border-width solid;
-    margin: -$section-offset auto;
+    margin: -$section-offset auto 0;
     background: $color-background;
-    border-image: linear-gradient(to bottom, $color-link-highlight, $color-link) 1;
+    border-image: $_border-image;
     line-height: normal;
     transform: translateZ(0); // new stacking context to sit on top of image
 
@@ -61,24 +80,33 @@ $_border-width: 0.5rem;
       padding-right: 2rem;
       padding-left: 2rem;
     }
+
+    @media (min-width: $bp-lg) {
+      margin-bottom: 0;
+    }
   }
 
   &__Title {
     position: absolute;
-    top: 0;
-    right: -$_border-width;
+    top: 0.0625rem;
+    left: 50%;
     color: $color-link-highlight;
-    font-size: $font-size-xl;
+    font-size: $font-size-xxl;
     font-weight: bold;
     line-height: 0.95;
     scroll-margin-top: #{$header-height--min + 1rem};
     text-align: right;
     text-shadow: 0.125rem -0.0625rem $color-white;
     text-transform: uppercase;
-    transform: translateY(-100%);
+    transform: translate(-50%, -100%);
 
     @media (min-width: $bp-md) {
-      font-size: $font-size-xxl;
+      font-size: 3.625rem;
+    }
+
+    @media (min-width: $bp-lg) {
+      top: 0.3125rem;
+      font-size: $font-size-mega;
     }
   }
 

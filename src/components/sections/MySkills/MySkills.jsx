@@ -3,6 +3,7 @@ import 'components/sections/MySkills/MySkills.scss';
 import MySkillsImage from 'img/MySkills.jpg';
 
 import SectionHeader from 'components/sections/SectionHeader/SectionHeader';
+import TextRepeater from 'components/text/TextRepeater/TextRepeater';
 
 function MySkills() {
   const frameworks = [
@@ -25,7 +26,9 @@ function MySkills() {
   ];
 
   return (
-    <div className="MySkills">
+    <div className="App__Section MySkills">
+      <TextRepeater text={process.env.REACT_APP_SKILLS_TITLE} count={20} />
+
       <SectionHeader 
           img={MySkillsImage} 
           imgAlt="A hand holding a lightbulb to the sun" 
