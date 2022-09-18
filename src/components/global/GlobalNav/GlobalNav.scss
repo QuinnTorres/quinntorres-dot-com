@@ -17,7 +17,7 @@ $_nav-padding-horizontal: 1.5rem;
   padding: $_nav-padding-vertical $_nav-padding-horizontal;
   border-bottom: $_border-height solid $color-link;
   backdrop-filter: blur(1.25rem);
-  background: rgba($color-white, 0.9);
+  background: rgba($color-white, 0.95);
   transition: all $anim-speed-default ease-in-out;
   transition-property: height, width, background;
 
