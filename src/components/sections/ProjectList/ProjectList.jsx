@@ -75,7 +75,7 @@ function ProjectList() {
       <SectionHeader
           img={ProjectListImage}
           imgAlt="A computer with code on the screen"
-          title={process.env.REACT_APP_PROJECTS_TITLE}
+          title={`${process.env.REACT_APP_PROJECTS_TITLE}!`}
           anchor={process.env.REACT_APP_PROJECTS_ANCHOR}>
         {projects.map(({image, alt, title, link, notes}) => (
           <div className="ProjectList__Wrapper" key={title}>

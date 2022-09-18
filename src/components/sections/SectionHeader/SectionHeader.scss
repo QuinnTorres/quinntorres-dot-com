@@ -71,7 +71,7 @@ $_border-image: linear-gradient(to bottom, $color-link-highlight, $color-link) 1
     padding: 0.5rem 1.5rem;
     border: $_border-width solid;
     margin: -$section-offset auto 0;
-    background: $color-background;
+    background: $color-white;
     border-image: $_border-image;
     line-height: normal;
     transform: translateZ(0); // new stacking context to sit on top of image

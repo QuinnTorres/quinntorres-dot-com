@@ -17,13 +17,13 @@ $_nav-padding-horizontal: 1.5rem;
   padding: $_nav-padding-vertical $_nav-padding-horizontal;
   border-bottom: $_border-height solid $color-link;
   backdrop-filter: blur(1.25rem);
-  background: rgba($color-background, 0.9);
+  background: rgba($color-white, 0.9);
   transition: all $anim-speed-default ease-in-out;
   transition-property: height, width, background;
 
   &--MenuOpen {
     height: 25.5rem;
-    background: $color-background;
+    background: $color-white;
 
     @media (min-width: $bp-lg) {
       width: 30rem;

@@ -32,7 +32,7 @@ function MySkills() {
       <SectionHeader 
           img={MySkillsImage} 
           imgAlt="A hand holding a lightbulb to the sun" 
-          title={process.env.REACT_APP_SKILLS_TITLE} 
+          title={`${process.env.REACT_APP_SKILLS_TITLE}!`}
           anchor={process.env.REACT_APP_SKILLS_ANCHOR}>
         <h3 className="MySkills__SkillHeader MySkills__FrameworkHeader">
           Frameworks
