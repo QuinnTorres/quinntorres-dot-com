@@ -9,5 +9,9 @@
   .IconLink {
     margin: 1rem 0;
     fill: $color-white;
+
+    &:hover {
+      fill: $color-link-highlight;
+    }
   }
 }
