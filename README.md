@@ -17,4 +17,4 @@ Run `yarn start` to start a local server at [http://localhost:3000](http://local
 
 ## Deployment
 
-Run `yarn build` to prepare the app for deployment and output into the `build` folder
+Run `yarn deploy` to deploy the latest from the `main` branch to `quinntorres.com`
