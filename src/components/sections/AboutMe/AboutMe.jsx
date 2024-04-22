@@ -16,7 +16,7 @@ function About() {
           title="Hello!"
           anchor={process.env.REACT_APP_ABOUT_ANCHOR}>
         <p>
-          I'm a senior front-end developer in NYC at <TextLink href="https://www.dotdashmeredith.com/">Dotdash Meredith</TextLink>, the largest digital publisher in the US. I have 3 years experience developing performance-first sites, which are among the <TextLink href="https://webperf.xyz">fastest on the web</TextLink>. I also have experience with:
+          I'm a senior front-end developer in NYC at <TextLink href="https://www.dotdashmeredith.com/">Dotdash Meredith</TextLink>, the largest digital publisher in the US. I have {new Date().getFullYear() - 2019} years experience developing performance-first sites, which are among the <TextLink href="https://webperf.xyz">fastest on the web</TextLink>. I also have experience with:
         </p>
         <ul>
           <li>⚛️ React.js</li>
