@@ -18,11 +18,11 @@ function MyExperience() {
       place: 'Dotdash Meredith',
       title: 'Senior Front-End Engineer',
       notes: [
-        'Improved a site’s PageSpeed from 43 to 96',
-        'Given the inaugural product development principles award',
-        'Shortened onboarding from 2 months to 2 weeks through documentation',
-        'Built a custom AMP framework',
-        'Completely replatformed 2 acquisition sites'
+        'Given the inaugural product development principles award, nominated by coworkers',
+        'Shortened onboarding from 2 months to 2 weeks by helping create 200+ new tech documents and a course of assignments as part of a documentation guild',
+        'Built a custom AMP framework used by 10+ company sites for AMP support in less than 2 weeks',
+        'Improved a site’s PageSpeed from 43 to 96 by refactoring resource download timelines and reducing payload sizes',
+        'Fully replatformed 4 acquisition sites, one of which grew traffic by 4x'
       ]
     },
     {
@@ -30,8 +30,8 @@ function MyExperience() {
       place: 'Columbia Advising',
       title: 'Computer Science Tutor',
       notes: [
-        'Established custom lesson plans for 1-on-1 tutoring sessions',
-        'Led group tutoring sessions'
+        'Established custom lesson plans for 1-on-1 tutoring sessions with other college students',
+        'Led group tutoring sessions on topics such as Data Structures & Algorithms and Computer Science Theory'
       ]
     },
     {
@@ -39,8 +39,8 @@ function MyExperience() {
       place: 'Dotdash',
       title: 'Full Stack Engineering Intern',
       notes: [
-        'Developed a Vue.js faceted search experience',
-        'Integrated the Google Places API into a back-end service'
+        'Developed a Vue.js faceted search experience for filtering over 10,000 recipes by 7 different fields',
+        'Integrated the Google Places API into a back-end service for location information available on 4,000+ articles'
       ]
     },
     {
@@ -48,8 +48,8 @@ function MyExperience() {
       place: 'Vestorly',
       title: 'Front-End Engineering Intern',
       notes: [
-        'Met with stakeholders and built a calendar of scheduled user events',
-        'Used Ember.js and open-source addons for the single-page app'
+        'Met with stakeholders, planned a roadmap, and designed the UI for a calendar of scheduled newsletters by the user',
+        'Used Ember.js and open-source addons to create the single-page viewing and scheduling calendar'
       ]
     },
     {
@@ -57,8 +57,8 @@ function MyExperience() {
       place: 'ADI: Labs',
       title: 'Full Stack Developer',
       notes: [
-        'Created a marketplace for student textbooks',
-        'Constructed an API for college course reviews through Facebook Messenger'
+        'Created a marketplace for searching, wishlisting, and swapping textbooks using Flask, Bootstrap, and MongoDB',
+        'Constructed a REST API for posting and reading college course reviews through Facebook Messenger'
       ]
     },
     {
@@ -66,8 +66,8 @@ function MyExperience() {
       place: 'UTSW Medical Center',
       title: 'Engineering Research Intern',
       notes: [
-        'Programmed an app for controlling a custom motion device in an MRI',
-        'Published research in the Journal of Magnetic Resonance'
+        'Programmed a LabVIEW app for the control and visualization of a custom motion device for studying MRI errors',
+        'Published research in the peer-reviewed Journal of Magnetic Resonance (DOI 10.1002/mrm.25903)'
       ]
     },
   ];
